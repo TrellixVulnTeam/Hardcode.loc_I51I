@@ -17,15 +17,15 @@
 		<div class="content">
 			<?php 
 				if ($_GET["content"] == "puzzle") {
-					include "pages/puzzle.php";
+					require_once "pages/puzzle.php";
 				} else if ($_GET["content"] == "guess") {
-					include "pages/guess.php";
+					require_once "pages/guess.php";
 				} else if ($_GET["content"] == "guess_mp") {
-					include "pages/guess_mp.php";
+					require_once "pages/guess_mp.php";
 				} else if ($_GET["content"] == "genPass") {
-					include "pages/genPass.php";
+					require_once "pages/genPass.php";
 				} else {
-					include "content.php";
+					require_once "content.php";
 				}
 			?>
 			
