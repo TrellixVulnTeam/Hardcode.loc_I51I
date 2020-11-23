@@ -1,0 +1,508 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.wrapper {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 4000px;
+    padding-top: 150px;
+}
+.container {
+    min-width: 315px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.default {
+    &__title {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        color: #ad7835;
+        font-size: 36px;
+        position: relative;
+    }
+    &__title:before {
+        content:'';
+        position: absolute;
+        margin: 0 auto;
+        bottom: -7px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        width: 80%;
+        background-color: #ad7835;
+        }
+    &__text {
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #fff;
+        letter-spacing: 1.5px;
+        text-align: left;
+        line-height: 20px;
+        font-size: 18px;
+    }
+    &__text strong{
+        color: #ad7835;
+    }
+}
+
+.in_work {
+    padding-top:50px;
+    background-color: transparent;
+    &__text {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #999;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(#000, 0.9);
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 10;
+    &__top {        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        color: #fff;
+        &_img {
+            margin: 0 -10px;
+        }
+    }
+    &__menu {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    &__link {
+        position: relative;
+        padding: 5px 0;
+    }
+    &__link::before {
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 10%;
+        height: 3px;
+        background-color: #fff;
+        opacity: 0;
+        transition-duration: 0.5s;
+    }
+    &__link:hover:before {
+        width: 100%;
+        opacity: 1;
+    }
+    li {
+        margin-left: 20px;
+    }
+    &__title {
+        color: #ad7835;
+        margin: 0 auto;
+        text-align: center;
+        min-height: 270px;
+        width: 100%;
+        background-color:rgba(#000, .2);
+        &_name{
+            padding-top: 20px;
+            letter-spacing: 1.5px;
+            position: relative;
+            font-weight: 700;
+        }
+        &_name:before{
+            content:"";
+            position: absolute;
+            width: 7%;
+            height: 2px;
+            background-color: #ad7835;
+            margin: 0 auto;
+            bottom: -5px;
+            right: 0;
+            left: 0;
+        }
+        &_site{
+            font-size: 60px;
+            letter-spacing: 5px;
+        }
+        &_text{
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            word-spacing: 5px;
+        }
+    }
+}
+
+.about {
+    margin-top: 200px;
+    padding-top: 70px;
+    &__inner {
+        min-height: 400px;
+        background-color: rgba(#373737,.8);
+    }
+    &__img {
+        position: relative;
+        margin: 20px 10px 10px 20px;
+        float: right;
+    }
+    &__img:before {
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 5px 10px #373737;
+    }
+}
+
+.portfolio {
+    &__inner h2 {
+        padding-top: 70px;
+    }
+    &__block {
+        margin-top: 50px;
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 320px;
+        margin: 30px 10px 0 10px;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__bg_img {
+        padding-top: 20px;
+        padding-left: 20px;
+        position: relative;
+        text-align: left;
+    }
+    &__bg_img:before {
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 20px;
+        height: 90%;
+        background-color: #323232;
+    }
+    &__bg_img:after {
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 90%;
+        height: 20px;
+        background-color: #323232;
+    }
+    &__title {
+        padding: 10px;
+        color: #ad7835;
+        border-bottom: 1px solid #ad7835;
+        text-align: left;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+    &__text {
+        text-align: justify;
+        padding: 10px 5px;
+        color: #fff;
+        line-height: 20px;
+        text-indent: 20px;
+        letter-spacing: 0.7px;
+    }
+    &__link {
+        font-weight: 700;
+        border: 1px solid #ad7835;
+        color: #ad7835;
+        min-height: 30px;
+        line-height: 30px;
+        min-width: 100px;
+        padding-left: 10px;
+        padding-right: 20px;
+        margin-top: 10px;
+        position: relative;
+        transition-duration: 0.3s;
+    }
+    &__item:hover &__link {
+        border: 1px solid #fff;
+        color: #fff;
+        background: #ad7835;
+    }
+    &__link:after {
+        content: "  \f054";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'icomoon';
+        color: #ad7835;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    &__item:hover &__link:after {
+        color: #fff;
+    }
+}
+
+.cheat, .links {
+    padding-top: 70px;
+    .cheat__inner, .links__inner {
+        background-color: #323232;
+        min-height: 384px;
+    }
+    .cheat__img, .links__img {
+        background-color: #ad7835;
+        display: inline-block;
+        padding: 5px;
+        float: right;
+        margin-top: -10px;
+        margin-right: 30px;
+    }
+    .cheat__text, .links__text {
+        padding-top: 10px;
+    }
+}
+
+.games {
+    padding-top: 70px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__list {
+        text-align: left;
+        list-style: none;
+    }
+    &__item a {
+        color: #3f9dff;
+        font-size: 28px;
+        padding: 20px;
+    }
+    &__item a:hover {
+        text-decoration: underline;
+    }
+    &__item p {
+        color: #fff;
+        text-indent: 20px;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+    }
+}
+
+
+.evolution {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__item {
+        display: inline-block;
+        background: rgba(#373737, 0.5);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        &_name {
+            color: #ad7835;
+            font-weight: 700;
+            border-radius: 10px;
+            background-color: #323232;
+            padding: 10px;
+        }
+        &_name:before {
+            font-family: 'icomoon';
+            display: block;
+            font-size: 60px;
+            padding-bottom: 10px;
+        }
+        p {
+            padding: 10px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    .icon_HTML:before {
+        content: "\e908";
+        color: #e34f26;
+    }
+    .icon_CSS:before {
+        content: "\e909";
+        color: #1572b6;
+    }
+    .icon_SCSS:before {
+        content: "\e902";
+        color: #c69;
+    }
+    .icon_Bootstrap:before {
+        content: "\e907";
+        color: #563d7c;
+    }
+    .icon_Gulp:before {
+        content: "\e905";
+        color: #da4648;
+    }
+    .icon_Git:before {
+        content: "\e906";
+        color: #f05032;
+    }
+    .icon_JS:before {
+        content: "\e90b";
+        color: #f7df1e;
+    }
+    .icon_jQuery:before {
+        content: "\e904";
+        color: #0769ad;
+    }
+    .icon_React:before {
+        content: "\e903";
+        color: #61dafb;
+    }
+    .icon_NodeJS:before {
+        content: "\e90a";
+        color: #393;
+    }
+    .icon_PHP:before {
+        content: "\e901";
+        color: #777bb4;
+    }
+    .icon_MySQL:before {
+        content: "\e900";
+        color: #4479a1;
+    }
+    .icon_Wordpress:before {
+        content: "\e90c";
+        color: #21759b;
+    }
+    &__level {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: #ad7835;
+        border-radius: 5px;
+        background-color: rgba(#323232,0.9);
+        padding: 10px;
+        margin-bottom: 10px;
+        strong {
+            width: 100%;
+            padding-bottom: 5px;
+        }
+        span {
+            background-color: rgba(#323232,0.5);
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        &_zero{
+            color: #E32636;
+        }
+        &_first{
+            color: #ba5536;
+        }
+        &_second{
+            color: #9b4f0f;
+        }
+        &_third{
+            color: #c99e10;
+        }
+        &_fourth{
+            color: #a2c523;
+        }
+        &_fifth{
+            color: #486D00;
+        }
+    }
+    &__start {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__title-time {
+        color: #ad7835;
+        font-weight: 100;
+        font-size: 40px;
+        margin: 40px 0px 20px;
+        width: 100%;
+        max-width: 100%;
+    }       
+    &__countUp {
+        font-family: sans-serif;
+        color: #fff;
+        width: 50%;
+        font-weight: 100;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        &-title {
+            color: rgba(#fff,0.5);
+            font-style: italic;
+        }
+        &-number {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 3px;
+            background: rgba(#323232, 0.5);
+            display: inline-block;
+        }       
+        &-time {
+            padding: 15px;
+            border-radius: 3px;
+            background: #373737;
+            display: inline-block;
+        }       
+        &-text {
+            display: block;
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    }
+}
+
+.footer {
+    min-height: 70px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+ 
+@import "media";

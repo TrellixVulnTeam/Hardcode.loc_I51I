@@ -1,0 +1,112 @@
+@media (max-width: 900px) {
+    // создаем блок для бургер-меню
+    .header__burger {
+        position: relative;
+        width: 50px;
+        height: 60px;
+        display: block;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    // создаем 3 полоски для бургер-меню
+    .header__burger span,
+    .header__burger:before,
+    .header__burger:after {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .header__burger span {
+        top: 45%;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content:"";
+    }
+    .header__burger:before {
+        top: 20%;
+    }
+    .header__burger:after {
+        bottom: 20%;
+    }
+    // при клике бургер-меню превращается в крест
+    .header__burger.open-menu span {
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .header__burger.open-menu:before {
+        transform: rotate(45deg);
+        top: 50%;
+        transition: 0.4s;
+    }
+    .header__burger.open-menu:after {
+        transform: rotate(-45deg);
+        top: 50%;
+        transition: 0.4s;
+    }
+    // перемещаем меню навигации
+    .header__menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: right;
+    background: rgba(#000, 0.9);
+    right: -100%;
+    transition: all 0.4s ease;
+    }
+    .header__menu li{
+        text-align: center;
+        margin-left: 0;
+    }
+    .header__menu a{
+        width: 100%;
+        padding: 15px 20px 15px 0;
+        letter-spacing: 1.5px;
+    }
+    .header__menu a:hover{
+        background-color: #323232;
+        margin-left: 0;
+    }
+    .header__menu.open-menu {
+        right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .cheat .cheat__img, .links .links__img {
+        display: none;
+    }
+    .evolution__countUp {
+        width: 100%;
+    }
+    .evolution__level {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .about__inner {
+        display: flex;
+        flex-direction: column;
+        .default__title {
+            align-self: center;
+        }
+    }
+    .about__img {
+        float: none;
+        display: inline-block;
+        align-self: center;        
+    }
+    .about__img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__title_site {
+        font-size: 47px;
+    }
+}

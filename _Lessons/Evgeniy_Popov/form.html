@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Формы</title>
+		<link rel="stylesheet" type="text/css" href="style_form.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<form action="formdata.php" method="POST" name="form">
+				
+				<fieldset>
+					<legend class="heading">Ввод личных данных</legend>
+					<p class="heading"><label for="name">Введите Ваше имя (макс. 10 символов):</label></p>
+					<p><input type="text" class="user_input" id="name" name="name" size="30" maxlength="10"></p>
+					<p class="heading"><label for="pass">Введите Ваш пароль (макс. 10 символов):</label></p>
+					<p><input type="password" class="user_input" id="pass" name="pass" size="30" maxlength="10"></p>
+				</fieldset>
+				<fieldset>
+					<legend class="heading">Вопросы</legend>
+				<p class="heading">Любите ли Вы экономить время?</p>
+				<p>	<label>Да<input type="radio" name="time" value="yes" checked></label>
+					<label>Нет<input type="radio" name="time" value="no"></label></p>
+
+				<p class="heading">Какими инструментами для экономии времени Вы пользуетесь?</p>
+				<p>
+					<label><input type="checkbox" name="ez" disabled>Ежедневник</label>
+					<label><input type="checkbox" name="hr">Хронометраж</label>
+					<label><input type="checkbox" name="sv">Свои наработки</label>
+				</p>
+
+				<p class="heading"><label for="sleep">Сколько часов Вы спите?</label></p>
+				<select name="sleep" id="sleep">
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option selected>8</option>
+					<option>больше 8</option>
+				</select>
+				</fieldset>
+				<p class="heading"><label for="text">Поделитесь своими наработками по экономии времени:</label></p>
+				<textarea name="text" cols="50" rows="6" id="text" readonly>Тестовый текст...</textarea>
+				<p><input type="reset" name="reset" value="Сброс">	<input type="submit" name="submit" value="Отправить"></p>
+				<p><input type="image" src="img/ibutton.png" name="imageButton"></p>
+				<p><input type="button" value="Кнопка" name="button"></p>
+				</form>
+			</div>
+		</div>
+		<p><a href="../index.html">Перейти на начало сайта</a></p>
+		<p><a href="index.html">Перейти на главную</a></p>
+		<p><a href="object.html">Работа с объектами</a></p>
+	</body>
+</html>

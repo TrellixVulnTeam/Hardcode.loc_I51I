@@ -1,0 +1,161 @@
+/* Общие */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header, footer {
+    border:3px solid #A50A0A;
+}
+
+main {
+    margin-top: 50px;
+}
+
+li {
+    display:inline-block;
+    margin: 0 20px;
+}
+
+.wrapper {
+    max-width:1170px;
+    margin:0 auto;
+    border:3px solid #7E37F1;
+}
+
+/* Форматирование текста */
+
+.text   {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68
+}
+
+.heading_1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.heading_2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.heading_3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.heading_4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.bg {
+    background-color: #316099;
+}
+
+.map {
+    margin-top: 96px;
+}
+
+/* Формы */
+
+.form_item {
+    border: 1px solid#356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.form_btn {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.item {
+    height: 30px;
+}
+
+/* Header */
+
+.menu, .main_content{
+    border:3px solid #05944F;
+    margin-top: 20px;
+}
+
+.top_content {
+    width:500px;
+    border:3px solid #12C8D3;
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
+/* Main */
+
+.main_content {
+    margin-bottom: 20px;
+}
+
+.main_content_block {
+    border: 3px solid #D019BE;
+    width:320px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.lfloat {
+    float:left;
+}
+
+.rfloat {
+    float:right;    
+}
+
+.submain {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer_content {
+    border: 3px solid #fff;
+    width: 500px;
+    margin: 50px 0;
+}
+
+.white {
+    border-color: #fff;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.copyright {
+    border: 3px solid #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacs {
+    padding: 20px;
+}
+
+/* Убрать рамку */
+
+.border_none {
+    border:none;
+}

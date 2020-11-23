@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin:auto;
+    outline:0px solid #000;	/*включить для отображения границ*/
+    width:1000px;
+}
+
+/*Голова сайта*/
+.header {
+	background-color: #dfdfdf;
+    border-bottom: 1px solid #b5b7ba;
+    margin-bottom:5px;
+    outline:0px solid #000;	/*включить для отображения границ*/
+    padding: 5px;
+    text-align: center;
+}
+
+/*Боковая панель*/
+.sidebar {
+	background-color: #dfdfdf;
+    border-right: 1px solid #b5b7ba;
+    margin-right:10px;
+    outline:0px solid #000;	/*включить для отображения границ*/
+    padding: 5px;
+    float:left;
+    min-height:500px;
+}
+
+.sidebar a {
+	color: #505050;
+	display:block;
+	padding:5px;
+	text-decoration: none;
+}
+
+.sidebar p {
+	background-color:#434445;
+	color: #fff;
+	text-align: center;
+	padding:5px;
+}
+
+/*Контент*/
+.content {
+	background-color: #eee;
+	margin-left:200px;
+	outline:0px solid #000;	/*включить для отображения границ*/
+	padding:5px;
+	min-height:500px;
+}
+
+.content img {
+	float:left;
+	outline:0px solid #000;	/*включить для отображения границ*/
+	margin-right:20px;
+}
+
+.content .box_text p {
+    color: #242424;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.content .box_text a  {
+    color: #40678a;
+    text-decoration: none;
+}
+
+/*Подвал*/
+.footer {
+    background-color: #434445;
+   	text-align: center;
+    color: #a4a4a4;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px
+ }
+
+/*Прочее*/
+.bold {
+	font-weight:bold;
+}
+
+.italic {
+	font-weight:italic;
+}
+
+.clear {
+	clear:both;
+	padding-top:5px;
+}

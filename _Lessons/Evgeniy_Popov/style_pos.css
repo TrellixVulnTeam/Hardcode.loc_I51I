@@ -1,0 +1,56 @@
+body {
+	margin:0;
+	padding:0;
+	background-color:#ccc;
+}
+
+#wrapper {
+	width:650px;
+	border:0px solid #000;
+	margin:0 auto;
+	padding:0;
+
+}
+
+#header {
+	height:70px;
+	background-image:url(img/redHeader.png);
+	margin:0;
+	outline:1px solid #000;
+	margin-top:70px;
+	position:relative;
+}
+
+#content {
+	background-color: #ddd;
+	border:1px solid #000;
+	margin:0;
+	padding: 10px;
+}
+
+#forPos {
+	outline: 0px solid #000;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#button {
+	position:absolute;
+	left:294px;
+	top:-14px;
+	z-index:1;
+}
+
+#fixed img {
+	position:fixed;
+	top:240px;
+	left:0;
+}
+
+#bird {
+	position:absolute;
+	left:279px;
+	top:-10px;
+	z-index:2;
+}

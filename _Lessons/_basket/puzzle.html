@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+
+			var score = 0;
+
+		function userAnswer	(inputId, answer) {
+			var userAnswer = document.getElementById(inputId).value;
+			userAnswer = userAnswer.toLowerCase();
+			for (var i = 0; i < answer.length; i++) {
+				if (userAnswer == answer[i]) {
+					score++
+					break;
+				}
+			}
+		}
+
+		function userAnswers () {
+			userAnswer("userAnswer1", ["ножницы", "ножница"]);
+			userAnswer("userAnswer2", ["крапива", "крапивка"]);
+			userAnswer("userAnswer3", ["морковь", "морковка"]);
+
+			alert("Вы отгадали " + score + " загадок!");
+		}
+
+
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="header">
+		<a href="index.html">Главная</a>
+		<a href="#">Загадки</a>
+		<a href="guess.html">Угадайка</a>
+	</div>
+	
+	<div class="contentWrap">
+		<div class="content">
+			<div class="center">
+
+				<h1>Игра в загадки</h1>
+				<div class ="box">
+					
+					<p>Два конца, два кольца,посредине гвоздик.</p>
+					<input type="text" id="userAnswer1">
+
+					<p>Не огонь, а жжется.</p>
+					<input type="text" id="userAnswer2">
+
+					<p>Красна девица сидит в темнице, а коса на улице.</p>
+					<input type="text" id="userAnswer3">	
+					<br>
+
+					<a href="#" onclick="userAnswers()">Ответить</a>
+									
+				</div>
+	
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+		copyright &copy; Alexander Bikmeev
+</div>
+	
+</body>
+</html>
