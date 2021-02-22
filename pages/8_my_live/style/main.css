@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.center {
+  padding-left: calc(50% - 1140px / 2);
+  padding-right: calc(50% - 1140px / 2);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  background: url(../img/bg_menu.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu__link {
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #b3eff9;
+}
+
+.content__heading {
+  font-family: Arial;
+  font-size: 35px;
+  font-weight: normal;
+  color: #9fe3ee;
+}
+
+.content__text {
+  display: inline-block;
+  border-radius: 10px;
+  background: #B3EFF9;
+  padding: 0 17px 6px 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial;
+  color: #114a52;
+}
+
+.content__link {
+  font-size: 18px;
+  font-family: Arial;
+  color: #9fe3ee;
+  text-decoration: none;
+  border-bottom: 2px dotted #6dedec;
+}
+
+.content__link:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.content__p {
+  font-size: 14px;
+  font-family: Tahoma;
+  font-weight: normal;
+  color: #9fe3ee;
+}
+
+.content__block_heading {
+  width: 220px;
+  font-size: 14px;
+  color: #9fe3ee;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.content__block_list {
+  font-weight: normal;
+  font-size: 13px;
+  list-style: none;
+  color: #9fe3ee;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.content__block_list_item {
+  padding: 2px 0 2px 22px;
+  background: url(../img/list.png) no-repeat 0 -2px;
+  height: 20px;
+  width: 220px;
+  text-align: left;
+}
+
+.add {
+  border-radius: 10px;
+  width: 364px;
+  height: auto;
+  font-family: Tahoma;
+  font-weight: Bold;
+  color: #7fccd8;
+  font-size: 14px;
+  padding: 20px;
+  background-color: #1e8797;
+}
+
+.price {
+  font-family: Arial;
+  font-size: 30px;
+  color: #9fe3ee;
+  font-weight: normal;
+}
+
+.price__block {
+  width: 450px;
+  background: url(../img/left_price_top.png) no-repeat top left;
+  padding: 20px 0 0 0;
+  margin: 0 0 20px 0;
+}
+
+.price__block_bg {
+  width: 450px;
+  padding: 10px 0 40px 0;
+  background: url(../img/left_price_bottom.jpg) no-repeat bottom left;
+  height: 115px;
+  font-size: 14px;
+  font-family: Tahoma;
+}
+
+.price__block_bg_text {
+  width: 345px;
+  padding: 0 65px 20px 40px;
+  height: 10px;
+  margin: 0;
+  text-align: right;
+  background: url(../img/bull.png) no-repeat 25px 0;
+}
+
+.footer {
+  height: 75px;
+  background: #000;
+}
+/*# sourceMappingURL=main.css.map */
